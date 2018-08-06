@@ -36,7 +36,7 @@ function auto_anonyminize()
 		while(a_to_vh == false && j < a_to_vg)
 		{
 			a_to_vi = a_to_ve[i].href;
-			if(a_to_vi.match(a_to_vf[j]) || !a_to_vi || !a_to_vi.match("http://"))
+			if(a_to_vi.match(a_to_vf[j]) || !a_to_vi || !a_to_vi.match("https://"))
 			{
 				a_to_vh = true;
 			}
@@ -45,7 +45,7 @@ function auto_anonyminize()
 		
 		if(a_to_vh == false)
 		{
-			a_to_ve[i].href = "https://"+pimplink+"?" + a_to_vi;		
+			a_to_ve[i].href = "http://"+pimplink+"?" + a_to_vi;		
 			a_to_vb++;
 			a_to_vc += i + ":::" + a_to_ve[i].href + "\n" ;	
 		}
